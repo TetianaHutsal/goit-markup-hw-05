@@ -23,7 +23,7 @@
       <nav class="header-navigation">
         <a href="./index.html" class="header-logo-web link">Web<span class="header-logo-studio link">Studio</span></a>
         <ul class="header-list list">
-          <li class="header-item"><a class="header-link link" href="./index.html">Studio</a></li>
+          <li class="header-item"><a class="header-link link active" href="./index.html">Studio</a></li>
           <li class="header-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
           <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
         </ul>
@@ -31,8 +31,10 @@
       <!-- Navigation contacts -->
       <address class="header-address">
         <ul class="header-address-list list">
-          <li><a class="header-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="header-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="header-adress-item"><a class="header-address-link link"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="header-adress-item"><a class="header-address-link link" href="tel:+110001111111">+11 (000)
+              111-11-11</a></li>
         </ul>
       </address>
     </div>
@@ -42,7 +44,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <button class="hero-button" data-modal-open type="button">Order Service</button>
       </div>
     </section>
     <!-- section 2 feature -->
@@ -319,6 +321,15 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-button" data-modal-close type="button">
+        <svg class="icon-closebtn" width="8px" height="8px">
+          <use href="./images/closebtn.svg#icon-closebtn"></use>
+        </svg></button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
